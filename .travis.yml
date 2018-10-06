@@ -1,18 +1,14 @@
 language: node_js
 node_js:
-  - "8.9.4"
-    
+- 8.9.4
 branches:
   only:
-    - master
-    - dev
-
+  - master
+  - dev
 before_script:
-  - npm install -g ionic cordova jest
-
+- npm install -g ionic cordova jest
 script:
-  - npm run test-ci
-
+- npm run test-ci
 deploy:
   provider: heroku
   api_key:
@@ -20,3 +16,6 @@ deploy:
   app: my-reboot
   on:
     repo: phortonssf/reboot
+env:
+  global:
+    secure: YJJIFFtwltddx9xMbWiRX3bhPjN2UNnpYKJA4kR+6/l1mgW8nFPU4fZdthnhGqAkdeYefHBMiwNb6KGCcCoNwjtBw03FzqtuWxZYjr1vBmwSAv6chlJuIMYM3WUqU2cYH8zRX1LT/6hAGVecogH+VI1QferMR/zloUvzJjLNkdBpIZWEG9ZKBXDd7rL7Yy+76UveHzk9txlyNK1e3oMGmXzGYEtHhFwzzY8Xas9q9VDZ83nNmxri8jfrmK5VRobns6ffTaHsncxYJrzqWP3zjHKMiz5jR3v4KbjI7ywUcrdJHGGzH4b5TqOcCja6TpLnvrmYfffedVSVjVXRcXHo/cbwwj3ZvjgIx/lvIID8c6AL/oZaTvcUG/i3WDncG0QaVUZcEsgYB3Qcc1weKLxBfhwXswZ5mESYPeSytbDQoQgEKpF0apqQFmpSMmp5gM7uvmGvIUd/JA15sC9lI8TzuGWy7SyujNOqzXsddHGIgTU1Ey0GFBoUXIfqGxo7Jexs2660hs3cy+StdTLbLz7YFjKQtFucN7WBT4vASp5opJ6NxhW9CyZVmcHKS8noAHF0D4i069Aj+Hk8qrTnW+b5FfWleywnPsZ/Y8vEW2lCr5e7kRIgy8vl/u8BrrUphxO/p4xunKODzbcn6FkQkyVos/L6JZQjXhxnu1VCgdg6AoQ=
