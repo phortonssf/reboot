@@ -16,7 +16,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: KEY
+    secure: 4bad570d-18ad-415c-b2ac-d5c3265fab01
   app: my-reboot
   on:
     repo: phortonssf/reboot
