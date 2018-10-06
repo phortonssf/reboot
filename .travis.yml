@@ -19,4 +19,4 @@ deploy:
     secure: KEY
   app: ssf-reboot
   on:
-    repo: SoftStackFactory/reboot
+    repo: phortonssf/reboot
